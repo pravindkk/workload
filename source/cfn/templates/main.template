@@ -390,7 +390,7 @@ Resources:
       NodeLambdaRuntime: !FindInMap [Solution, Constants, NodeLambdaRuntime]
       PythonLambdaRuntime: !FindInMap [Solution, Constants, PythonLambdaRuntime]
       DeploymentBucket: !Sub
-        - https://s3.${Region}.amazonaws.com/${DeploymentBucketNamePrefix}-${Region}/${DeploymentBucketKey}
+        - https://github.com/pravindkk/workload/blob/3cd7d2f539f529154c05501c03f24e6ad62b1825/source/cfn/templates
         - DeploymentBucketKey: !FindInMap [Solution, Constants, DeploymentBucketKey]
           DeploymentBucketNamePrefix: !FindInMap [Solution, Constants, DeploymentBucketNamePrefix]
           Region: !Ref AWS::Region
